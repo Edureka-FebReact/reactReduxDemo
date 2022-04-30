@@ -8,11 +8,11 @@ class App extends React.Component {
     this.props.foodItems();
   } // this will call the action when the component mounts
   render() {
-    return(
-        <div>
-            <DisplayItems datalist = {this.props.finalState}></DisplayItems>
-        </div>
-    )
+    return (
+      <div>
+        <DisplayItems datalist={this.props.finalState}></DisplayItems>
+      </div>
+    );
   }
 }
 function mapStateToProps(state) {
