@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware } from "redux";
-
-let store = createStore(applyMiddleware())
+import reducers from '../reducers'
+let store = createStore(reducers,applyMiddleware())
 
 export default store;
